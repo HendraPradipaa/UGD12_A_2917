@@ -119,7 +119,6 @@ export async function updateInvoice(
         message: 'Database Error: Failed to Update Invoice.',
       };
     }
-  }
   } else {
     updateLocalInvoice({
       id,
