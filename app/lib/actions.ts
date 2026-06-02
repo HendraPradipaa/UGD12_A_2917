@@ -12,7 +12,7 @@ import {
   updateLocalInvoice,
 } from './local-data';
 
-const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
+const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require', prepare: false });
 
 const FormSchema = z.object({
   id: z.string(),
